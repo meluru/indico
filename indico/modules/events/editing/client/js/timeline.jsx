@@ -18,6 +18,7 @@ import {indicoAxios, handleAxiosError} from 'indico/utils/axios';
 
 import storeFactory from './store';
 import Timeline from './components/Timeline';
+import FileTypeInterface from './components/FileTypeInterface';
 
 document.addEventListener('DOMContentLoaded', async () => {
   const timelineElement = document.querySelector('#editing-timeline');
