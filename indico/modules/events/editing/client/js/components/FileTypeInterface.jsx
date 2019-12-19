@@ -12,6 +12,7 @@ import PropTypes from 'prop-types';
 import {Button, Icon, Loader, Message, Segment} from 'semantic-ui-react';
 import {Translate} from 'indico/react/i18n';
 import {useIndicoAxios} from 'indico/react/hooks';
+import FileTypeModal from './FileTypeModal';
 
 import './FileTypeInterface.module.scss';
 
@@ -61,6 +62,7 @@ export default function FileTypeInterface({eventId}) {
         <Icon name="plus" />
         <Translate>Add a new file type</Translate>
       </Button>
+      <FileTypeModal />
     </div>
   );
 }
